@@ -1,6 +1,8 @@
-def square_array(array)
-  # your code here
-end 
- def square_array(list)
-  list.map |num| num**2
+def square_array(numbers)
+  square_array = Array.new
+  numbers.each do |a|
+    b = a**2
+    square_array << b
+  end
+  square_array
 end
